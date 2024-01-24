@@ -1,0 +1,39 @@
+https://github.com/santiwik/Ejercicios-1
+Ejercicios (1) Daniel Santiso Candel
+
+1.	git config --global user.email "danielsantiso04@gmail.com" 
+   	git config --global user.name "Daniel Santiso Candel"
+	git config --global color.ui auto
+
+2. 	mkdir libro
+	cd libro
+	git init
+	git remote add origin https://github.com/santiwik/Ejercicios-1.git
+	dir
+
+3. 	1. git status
+	2. (crear fichero):
+		echo "Capitulo 1: Introduccion a Git" >> indice.txt
+		echo "Capitulo 2: Flujo de trabajo basico" >> indice.txt
+		echo "Capitulo 3: Repositorios remotos" >> indice.txt
+	3. git status
+	4. git add indice.txt (para añadir el archivo indice.txt)/ git add . (para añadir todos los archivos del directorio
+	5. git status
+
+4.	git commit -m "Añadido indice del libro."
+	git status
+
+5.	1. (cambio de contenido)
+		echo "Capitulo 1: Introduccion a Git" > indice.txt
+		echo "Capitulo 2: Flujo de trabajo basico" >> indice.txt
+		echo "Capitulo 3: Gestion de ramas" >> indice.txt
+		echo "Capitulo 4: Repositorios remotos" >> indice.txt
+	2. git diff
+	3. git add indice.txt
+	   git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+
+6.	1. git log
+	2. git commit --amend -m "Añadido capítulo 3 sobre gestión de ramas al índice"
+	3. git diff
+
+(para enviarlo hay que hacer un git push)
